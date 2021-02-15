@@ -16,6 +16,8 @@
 		E722311925DAF65D00BF8E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E722311725DAF65D00BF8E28 /* LaunchScreen.storyboard */; };
 		E722312425DAF65D00BF8E28 /* AppEventos_SouthSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722312325DAF65D00BF8E28 /* AppEventos_SouthSystemTests.swift */; };
 		E722312F25DAF65D00BF8E28 /* AppEventos_SouthSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722312E25DAF65D00BF8E28 /* AppEventos_SouthSystemUITests.swift */; };
+		E722314225DAF6F300BF8E28 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722314125DAF6F300BF8E28 /* Events.swift */; };
+		E755B98925DB22FC008F1EDD /* EventsNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E755B98825DB22FC008F1EDD /* EventsNetwork.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		E722312A25DAF65D00BF8E28 /* AppEventos-SouthSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AppEventos-SouthSystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E722312E25DAF65D00BF8E28 /* AppEventos_SouthSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEventos_SouthSystemUITests.swift; sourceTree = "<group>"; };
 		E722313025DAF65D00BF8E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E722314125DAF6F300BF8E28 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		E755B98825DB22FC008F1EDD /* EventsNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsNetwork.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 		E722310825DAF65B00BF8E28 /* AppEventos-SouthSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E722314025DAF6E200BF8E28 /* Model */,
+				E722313F25DAF6D500BF8E28 /* Network */,
 				E722310925DAF65B00BF8E28 /* AppDelegate.swift */,
 				E722310B25DAF65B00BF8E28 /* SceneDelegate.swift */,
 				E722310D25DAF65B00BF8E28 /* ViewController.swift */,
@@ -129,6 +135,22 @@
 				E722313025DAF65D00BF8E28 /* Info.plist */,
 			);
 			path = "AppEventos-SouthSystemUITests";
+			sourceTree = "<group>";
+		};
+		E722313F25DAF6D500BF8E28 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E755B98825DB22FC008F1EDD /* EventsNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E722314025DAF6E200BF8E28 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E722314125DAF6F300BF8E28 /* Events.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,7 +286,9 @@
 				E722310E25DAF65B00BF8E28 /* ViewController.swift in Sources */,
 				E722310A25DAF65B00BF8E28 /* AppDelegate.swift in Sources */,
 				E722310C25DAF65B00BF8E28 /* SceneDelegate.swift in Sources */,
+				E755B98925DB22FC008F1EDD /* EventsNetwork.swift in Sources */,
 				E722311425DAF65B00BF8E28 /* AppEventos_SouthSystem.xcdatamodeld in Sources */,
+				E722314225DAF6F300BF8E28 /* Events.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
