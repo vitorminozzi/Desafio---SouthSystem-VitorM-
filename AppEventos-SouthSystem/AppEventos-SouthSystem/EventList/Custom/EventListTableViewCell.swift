@@ -7,14 +7,27 @@
 
 import UIKit
 
+
+protocol EventListCellProtocol: class{
+    
+    func tappedButton()
+    
+    
+}
+
+
+
+
+
 class EventListTableViewCell: UITableViewCell {
 
+    
     
     
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var moreInfoButton: UIButton!
-    
+    weak var delegate:EventListCellProtocol?
     
     
     
@@ -31,8 +44,19 @@ class EventListTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func moreInfo(_ sender: Any) {
+    
+    func setupCellButton(delegate:EventListCellProtocol?){
         
+        self.delegate = delegate
+        
+    }
+    
+    
+    
+    @IBAction func moreInfo(_ sender: Any) {
+    
+        self.delegate?.tappedButton()
+       
     }
     
     

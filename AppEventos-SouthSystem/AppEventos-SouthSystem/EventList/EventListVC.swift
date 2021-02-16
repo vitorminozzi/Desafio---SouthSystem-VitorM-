@@ -42,6 +42,9 @@ extension EventListVC:UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell:EventListTableViewCell? = tableView.dequeueReusableCell(withIdentifier: "EventListTableViewCell") as? EventListTableViewCell
+        
+        cell?.setupCellButton(delegate: self)
+        
         return cell ?? UITableViewCell()
     }
     
@@ -49,3 +52,19 @@ extension EventListVC:UITableViewDelegate, UITableViewDataSource{
     
     
 }
+
+
+
+
+extension EventListVC: EventListCellProtocol {
+    func tappedButton() {
+        
+        print("tap")
+        
+        
+    }
+    
+   
+
+    }
+
