@@ -15,6 +15,8 @@
 		E722311925DAF65D00BF8E28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E722311725DAF65D00BF8E28 /* LaunchScreen.storyboard */; };
 		E722312425DAF65D00BF8E28 /* AppEventos_SouthSystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722312325DAF65D00BF8E28 /* AppEventos_SouthSystemTests.swift */; };
 		E722312F25DAF65D00BF8E28 /* AppEventos_SouthSystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E722312E25DAF65D00BF8E28 /* AppEventos_SouthSystemUITests.swift */; };
+		E750EAB325DCBFCD00B99BAB /* EventNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E750EAB225DCBFCD00B99BAB /* EventNetwork.swift */; };
+		E750EAC025DCC00800B99BAB /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = E750EABF25DCC00800B99BAB /* Events.swift */; };
 		E7FB54FA25DB35E0001144DD /* EventListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB54F925DB35E0001144DD /* EventListVC.swift */; };
 		E7FB550425DB36FD001144DD /* EventListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB550225DB36FD001144DD /* EventListTableViewCell.swift */; };
 		E7FB550525DB36FD001144DD /* EventListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FB550325DB36FD001144DD /* EventListTableViewCell.xib */; };
@@ -53,6 +55,8 @@
 		E722312A25DAF65D00BF8E28 /* AppEventos-SouthSystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AppEventos-SouthSystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E722312E25DAF65D00BF8E28 /* AppEventos_SouthSystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEventos_SouthSystemUITests.swift; sourceTree = "<group>"; };
 		E722313025DAF65D00BF8E28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E750EAB225DCBFCD00B99BAB /* EventNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNetwork.swift; sourceTree = "<group>"; };
+		E750EABF25DCC00800B99BAB /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		E7FB54F925DB35E0001144DD /* EventListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListVC.swift; sourceTree = "<group>"; };
 		E7FB550225DB36FD001144DD /* EventListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListTableViewCell.swift; sourceTree = "<group>"; };
 		E7FB550325DB36FD001144DD /* EventListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListTableViewCell.xib; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 		E722310825DAF65B00BF8E28 /* AppEventos-SouthSystem */ = {
 			isa = PBXGroup;
 			children = (
+				E750EABE25DCBFFD00B99BAB /* Model */,
+				E750EAB125DCBFBD00B99BAB /* EventNetwork */,
 				E7FB873125DB41FA008B9F1C /* EventDetails */,
 				E7FB54F825DB35C7001144DD /* EventList */,
 				E722310925DAF65B00BF8E28 /* AppDelegate.swift */,
@@ -136,6 +142,22 @@
 				E722313025DAF65D00BF8E28 /* Info.plist */,
 			);
 			path = "AppEventos-SouthSystemUITests";
+			sourceTree = "<group>";
+		};
+		E750EAB125DCBFBD00B99BAB /* EventNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				E750EAB225DCBFCD00B99BAB /* EventNetwork.swift */,
+			);
+			path = EventNetwork;
+			sourceTree = "<group>";
+		};
+		E750EABE25DCBFFD00B99BAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E750EABF25DCC00800B99BAB /* Events.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		E7FB54F825DB35C7001144DD /* EventList */ = {
@@ -299,7 +321,9 @@
 				E722310A25DAF65B00BF8E28 /* AppDelegate.swift in Sources */,
 				E722310C25DAF65B00BF8E28 /* SceneDelegate.swift in Sources */,
 				E722311425DAF65B00BF8E28 /* AppEventos_SouthSystem.xcdatamodeld in Sources */,
+				E750EAC025DCC00800B99BAB /* Events.swift in Sources */,
 				E7FB873325DB421E008B9F1C /* EventDetailsVC.swift in Sources */,
+				E750EAB325DCBFCD00B99BAB /* EventNetwork.swift in Sources */,
 				E7FB54FA25DB35E0001144DD /* EventListVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

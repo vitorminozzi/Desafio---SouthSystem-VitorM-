@@ -12,26 +12,20 @@ class EventListVC: UIViewController {
     @IBOutlet weak var eventLabel: UILabel!
     @IBOutlet weak var eventListTableView: UITableView!
     
+   
     
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
 
-        
         self.eventListTableView.register(UINib(nibName: "EventListTableViewCell", bundle: nil), forCellReuseIdentifier: "EventListTableViewCell")
         self.eventListTableView.delegate = self
         self.eventListTableView.dataSource = self
         self.eventListTableView.rowHeight = 350
         
-    
-        
     }
-    
-
-
 }
-
 
 
 extension EventListVC:UITableViewDelegate, UITableViewDataSource{
@@ -48,23 +42,14 @@ extension EventListVC:UITableViewDelegate, UITableViewDataSource{
         return cell ?? UITableViewCell()
     }
     
-    
-    
-    
 }
-
-
-
 
 extension EventListVC: EventListCellProtocol {
     func tappedButton() {
         
         print("tap")
         
-        
     }
     
-   
-
     }
 

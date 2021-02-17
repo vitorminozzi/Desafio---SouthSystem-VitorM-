@@ -1,8 +1,8 @@
 //
-//  EventsNetwork.swift
+//  EventNetwork.swift
 //  AppEventos-SouthSystem
 //
-//  Created by Vitor Gomes on 15/02/21.
+//  Created by Vitor Gomes on 17/02/21.
 //
 
 import Foundation
