@@ -15,21 +15,13 @@ protocol EventListCellProtocol: class{
     
 }
 
-
-
-
-
 class EventListTableViewCell: UITableViewCell {
 
-    
-    
     
     @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var moreInfoButton: UIButton!
     weak var delegate:EventListCellProtocol?
-    
-    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -37,30 +29,22 @@ class EventListTableViewCell: UITableViewCell {
     }
     
     
-    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
-    
-    
     func setupCellButton(delegate:EventListCellProtocol?){
         
         self.delegate = delegate
         
     }
-    
-    
-    
     @IBAction func moreInfo(_ sender: Any) {
     
         self.delegate?.tappedButton()
        
     }
     
-    
-    
-    
+
 }
 

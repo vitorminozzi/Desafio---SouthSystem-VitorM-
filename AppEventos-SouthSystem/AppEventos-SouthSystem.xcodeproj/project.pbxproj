@@ -21,6 +21,7 @@
 		E7FB550425DB36FD001144DD /* EventListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB550225DB36FD001144DD /* EventListTableViewCell.swift */; };
 		E7FB550525DB36FD001144DD /* EventListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7FB550325DB36FD001144DD /* EventListTableViewCell.xib */; };
 		E7FB873325DB421E008B9F1C /* EventDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FB873225DB421E008B9F1C /* EventDetailsVC.swift */; };
+		E7FD889025DCC503002E6EB3 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FD888F25DCC503002E6EB3 /* EventListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		E7FB550225DB36FD001144DD /* EventListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListTableViewCell.swift; sourceTree = "<group>"; };
 		E7FB550325DB36FD001144DD /* EventListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventListTableViewCell.xib; sourceTree = "<group>"; };
 		E7FB873225DB421E008B9F1C /* EventDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailsVC.swift; sourceTree = "<group>"; };
+		E7FD888F25DCC503002E6EB3 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 			children = (
 				E7FB550125DB36D9001144DD /* Custom */,
 				E7FB54F925DB35E0001144DD /* EventListVC.swift */,
+				E7FD888F25DCC503002E6EB3 /* EventListViewModel.swift */,
 			);
 			path = EventList;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				E722311425DAF65B00BF8E28 /* AppEventos_SouthSystem.xcdatamodeld in Sources */,
 				E750EAC025DCC00800B99BAB /* Events.swift in Sources */,
 				E7FB873325DB421E008B9F1C /* EventDetailsVC.swift in Sources */,
+				E7FD889025DCC503002E6EB3 /* EventListViewModel.swift in Sources */,
 				E750EAB325DCBFCD00B99BAB /* EventNetwork.swift in Sources */,
 				E7FB54FA25DB35E0001144DD /* EventListVC.swift in Sources */,
 			);

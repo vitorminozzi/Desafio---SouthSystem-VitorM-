@@ -7,20 +7,17 @@
 
 import Foundation
 
-
 class EventsNetwork{
     
-    
-         func getData(completionHandler: @escaping (Events) -> Void){
+         func getData(completionHandler: @escaping ([Events]) -> Void){
                     
-        let url: URL = URL(string: "http://5f5a8f24d44d640016169133.mockapi.io/api/events/1")!
-        
+        let url: URL = URL(string: "http://5f5a8f24d44d640016169133.mockapi.io/api/events/")!
         let task: Void = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
             guard let data = data else{ return }
           
             do {
-                let events = try JSONDecoder().decode(Events.self, from: data)
+                let events = try JSONDecoder().decode([Events].self, from: data)
                 completionHandler(events)
             }
             catch{
